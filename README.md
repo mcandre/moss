@@ -19,6 +19,7 @@ https://github.com/mcandre/moss
 * git-diff files independentlyy of git repositories
 * Diff words, not just lines (good for long text)
 * Color-coded differences (eyeball the changes faster)
+* Disables colors for tty's (compatible with piping to other programs)
 
 # REQUIREMENTS
 
