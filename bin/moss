@@ -1,12 +1,13 @@
 #!/usr/bin/env ruby
 
 def usage
-  puts "Usage: moss <path> <path>"
+  puts "Usage: moss [options] <file 1> <file 2>"
+  puts "-h Print usage info"
   exit 0
 end
 
 def main
-  usage unless ARGV.length == 2
+  usage if ARGV == ['-h'] || ARGV.length != 2
 
   output = `git diff #{ if $stdout.isatty then "--color-words" else "" end } --no-index #{ARGV.join ' '}`
 
