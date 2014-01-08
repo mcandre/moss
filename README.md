@@ -6,7 +6,7 @@
 
 # HOMEPAGE
 
-http://www.yellosoft.us/moss
+https://github.com/mcandre/moss
 
 # EXAMPLE
 
