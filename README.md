@@ -31,3 +31,7 @@ https://github.com/mcandre/moss
 Terminal colors: [Monokai](http://www.reddit.com/r/commandline/comments/1q4b90/is_there_a_monokai_port_for_nano/).
 
 In Windows, bash runs best in [Console2](http://chocolatey.org/packages/Console2), rather than in Command Prompt.
+
+# INSTALL
+
+    $ gem install moss
