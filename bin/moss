@@ -1,2 +1,20 @@
 #!/usr/bin/env ruby
-puts `git diff --color-words --no-index #{ARGV.join ' '}  | less -r`
+
+def usage
+  puts "Usage: moss <path> <path>"
+  exit 0
+end
+
+usage unless ARGV.length == 2
+
+def main
+  output = `git diff #{ if $stdout.isatty then "--color-words" else "" end } --no-index #{ARGV.join ' '}  | less -r`
+
+  puts output
+end
+
+begin
+  main
+rescue Interrupt
+  nil
+end
