@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
 def usage
-  puts "Usage: moss [options] <file 1> <file 2>"
-  puts "-h Print usage info"
+  puts 'Usage: moss [options] <file 1> <file 2>'
+  puts '-h Print usage info'
   exit 0
 end
 
