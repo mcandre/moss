@@ -8,7 +8,7 @@ end
 usage unless ARGV.length == 2
 
 def main
-  output = `git diff #{ if $stdout.isatty then "--color-words" else "" end } --no-index #{ARGV.join ' '}  | less -r`
+  output = `git diff #{ if $stdout.isatty then "--color-words" else "" end } --no-index #{ARGV.join ' '}`
 
   puts output
 end
