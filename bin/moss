@@ -5,9 +5,9 @@ def usage
   exit 0
 end
 
-usage unless ARGV.length == 2
-
 def main
+  usage unless ARGV.length == 2
+
   output = `git diff #{ if $stdout.isatty then "--color-words" else "" end } --no-index #{ARGV.join ' '}`
 
   puts output
