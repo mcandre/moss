@@ -1,4 +1,4 @@
-# moss - git-diff files independent of git repositories
+# moss - git-diff files independently of git repositories
 
     "Jiminy Jones! Look, the nature of the thing that is happening has changed slightly, rendering it yet more interesting!"
 
@@ -36,7 +36,7 @@ https://github.com/mcandre/moss
 
 # FEATURES
 
-* git-diff files indepent of git repositories
+* git-diff files independentlyy of git repositories
 * Diff words, not just lines (good for long text)
 * Color-coded differences (eyeball the changes faster)
 
