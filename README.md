@@ -1,18 +1,18 @@
 # moss - git-diff files independently of git repositories
 
-    "Jiminy Jones! Look, the nature of the thing that is happening has changed slightly, rendering it yet more interesting!"
-
-    --Maurice Moss, IT Crowd
-
-# HOMEPAGE
-
-https://github.com/mcandre/moss
+> "Jiminy Jones! Look, the nature of the thing that is happening has changed slightly, rendering it yet more interesting!"
+>
+> --Maurice Moss, IT Crowd
 
 # EXAMPLE
 
     $ moss examples/license-old.md examples/license-new.md
 
 ![screenshot](https://raw2.github.com/mcandre/moss/master/screenshot.png)
+
+# HOMEPAGE
+
+https://github.com/mcandre/moss
 
 # FEATURES
 
