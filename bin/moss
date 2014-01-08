@@ -1,0 +1,2 @@
+#!/usr/bin/env ruby
+puts `git diff --color-words --no-index #{ARGV.join ' '}  | less -r`
