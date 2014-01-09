@@ -4,11 +4,15 @@
 >
 > --Maurice Moss, IT Crowd
 
-# EXAMPLE
+# EXAMPLES
 
     $ moss examples/license-old.md examples/license-new.md
 
 ![screenshot](https://raw2.github.com/mcandre/moss/master/screenshot.png)
+
+## Flipping Maven Tests
+
+[flipping](https://github.com/mcandre/flipping) uses `moss` to highlight differences in complex Maven test values.
 
 # HOMEPAGE
 
