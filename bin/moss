@@ -1,15 +1,32 @@
 #!/usr/bin/env ruby
 
-def usage
-  puts 'Usage: moss [options] <file 1> <file 2>'
-  puts '-h Print usage info'
-  exit 0
-end
+require 'optparse'
 
 def main
-  usage if ARGV == ['-h'] || ARGV.length != 2
+  color = $stdout.isatty
 
-  output = `git diff #{ if $stdout.isatty then "--color-words" else "" end } --no-index #{ARGV.join ' '}`
+  option = OptionParser.new do |option|
+    option.banner = 'Usage: moss [options] <file 1> <file 2>'
+
+    option.on('-c', '--color', 'Enable colors (on by default for tty\'s') do
+      color = true
+    end
+
+    option.on('-h', '--help', 'Print usage info') do
+      puts option
+      exit
+    end
+  end
+
+  option.parse!
+
+  if ARGV.length != 2 then
+    puts option
+    exit
+  end
+
+
+  output = `git diff #{ if color then "--color-words" else "" end } --no-index #{ARGV.join ' '}`
 
   puts output
 end
