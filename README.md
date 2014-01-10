@@ -39,3 +39,17 @@ In Windows, bash runs best in [Console2](http://chocolatey.org/packages/Console2
 # INSTALL
 
     $ gem install moss
+
+# DEVELOPMENT
+
+Checkout a copy of the code, and get the developer dependencies:
+
+    $ git clone https://github.com/mcandre/moss.git
+    $ cd moss
+    $ bundle
+
+## Linting
+
+Keep the code looking good with the linter tools:
+
+    $ rake lint
