@@ -69,3 +69,7 @@ Ensure the example script works as expected:
 Keep the code looking good with the linter tools:
 
     $ rake lint
+
+## Git Hooks
+
+See `hooks/`.
