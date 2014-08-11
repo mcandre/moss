@@ -37,7 +37,7 @@ git_branched() {
   [[ $(git rev-parse --symbolic-full-name HEAD) = */"$1" ]]
 }
 
-if git_modified 'Gemfile|\.gemspec'
+if git_modified 'Gemfile|\.gemspec'; then
   bundle
 fi
 
