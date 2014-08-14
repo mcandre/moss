@@ -9,7 +9,7 @@ task :install => [:gem] do
 end
 
 task :test => [:clean, :install] do
-  sh 'moss examples/license-old.md examples/license-new.md'
+  sh 'cucumber'
 end
 
 task :publish => [:clean, :gem] do
