@@ -51,7 +51,20 @@ task :tailor => [] do
   sh 'bundle exec tailor'
 end
 
-task :lint => [:ruby, :reek, :flay, :roodi, :cane, :excellent, :rubocop, :tailor] do
+task :lili => [] do
+  sh 'bundle exec lili .'
+end
+
+task :lint => [
+  :ruby,
+  :reek,
+  :flay,
+  :roodi,
+  :cane,
+  :excellent,
+  :rubocop,
+  :tailor
+] do
 end
 
 task :flog => [] do
