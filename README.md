@@ -6,7 +6,9 @@
 
 # EXAMPLES
 
-    $ moss examples/license-old.md examples/license-new.md
+```
+$ moss examples/license-old.md examples/license-new.md
+```
 
 ![screenshot](https://raw2.github.com/mcandre/moss/master/screenshot.png)
 
@@ -27,7 +29,7 @@ https://github.com/mcandre/moss
 
 # REQUIREMENTS
 
-* [Ruby](https://www.ruby-lang.org/) 2.0+
+* [Ruby](https://www.ruby-lang.org/) 1.9+
 * `git` and `bash`. Often bundled with Mac OS X, Unix, and Linux. Available as [Git Bash](http://chocolatey.org/packages/git) in Windows.
 
 ## Optional
@@ -38,37 +40,45 @@ In Windows, bash runs best in [Console2](http://chocolatey.org/packages/Console2
 
 # INSTALL
 
-    $ gem install moss
+```
+$ gem install moss
+```
 
 # DEVELOPMENT
 
 Checkout a copy of the code, and get the developer dependencies:
 
-    $ git clone https://github.com/mcandre/moss.git
-    $ cd moss
-    $ bundle
+```
+$ git clone https://github.com/mcandre/moss.git
+$ cd moss
+$ bundle
+```
 
 ## Testing
 
 Ensure the example script works as expected:
 
-    $ bundle
-    $ cucumber
-    Feature: Run example tests
+```
+$ bundle
+$ cucumber
+Feature: Run example tests
 
-      Scenario: Running example tests            # features/run_example_tests.feature:3
-        Given the program has finished           # features/step_definitions/steps.rb:1
-        Then the output is correct for each test # features/step_definitions/steps.rb:5
+  Scenario: Running example tests            # features/run_example_tests.feature:3
+    Given the program has finished           # features/step_definitions/steps.rb:1
+    Then the output is correct for each test # features/step_definitions/steps.rb:5
 
-    1 scenario (1 passed)
-    2 steps (2 passed)
-    0m0.284s
+1 scenario (1 passed)
+2 steps (2 passed)
+0m0.284s
+```
 
 ## Linting
 
 Keep the code looking good with the linter tools:
 
-    $ rake lint
+```
+$ rake lint
+```
 
 ## Git Hooks
 
