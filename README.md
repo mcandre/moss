@@ -10,7 +10,7 @@
 $ moss examples/license-old.md examples/license-new.md
 ```
 
-![screenshot](https://raw2.github.com/mcandre/moss/master/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/mcandre/moss/master/screenshot.png)
 
 ## Flipping Maven Tests
 
