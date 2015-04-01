@@ -77,6 +77,10 @@ task :clean_astyle => [] do
   sh 'find . -type f -name "*.orig" -exec rm {} \\;'
 end
 
+task :xmllint => [] do
+  sh 'find . -name "*.xml" -exec xmllint --noout {} 2>&1 \\;'
+end
+
 task :lint => [
   :ruby,
   :reek,
@@ -88,7 +92,8 @@ task :lint => [
   :tailor,
   :lili,
   :editorconfig,
-  :astyle
+  :astyle,
+  :xmllint
 ] do
 end
 
