@@ -8,6 +8,15 @@
 
 ```
 $ moss examples/license-old.md examples/license-new.md
+
+$ moss -h
+Usage: moss [options] <file 1> <file 2>
+    -c, --color                      Enable colors (on by default for tty's
+    -h, --help                       Print usage info
+    -v, --version                    Print version info
+
+$ moss -v
+moss 0.4
 ```
 
 ![screenshot](https://raw.githubusercontent.com/mcandre/moss/master/screenshot.png)

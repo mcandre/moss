@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require 'moss'
 require 'optparse'
 
 def main
@@ -14,7 +15,12 @@ def main
 
     option.on('-h', '--help', 'Print usage info') do
       puts option
-      exit
+      exit 0
+    end
+
+    option.on('-v', '--version', 'Print version info') do
+      puts "moss #{Moss::VERSION}"
+      exit 0
     end
   end
 
