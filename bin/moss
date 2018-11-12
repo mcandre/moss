@@ -4,41 +4,41 @@ require 'moss'
 require 'optparse'
 
 def main
-  color = $stdout.isatty
+    color = $stdout.isatty
 
-  option = OptionParser.new do |option|
-    option.banner = 'Usage: moss [options] <file 1> <file 2>'
+    option = OptionParser.new do |option|
+        option.banner = 'Usage: moss [options] <file 1> <file 2>'
 
-    option.on('-c', '--color', 'Enable colors (on by default for tty\'s') do
-      color = true
+        option.on('-c', '--color', 'Enable colors (on by default for tty\'s') do
+            color = true
+        end
+
+        option.on('-h', '--help', 'Print usage info') do
+            puts option
+            exit 0
+        end
+
+        option.on('-v', '--version', 'Print version info') do
+            puts "moss #{Moss::VERSION}"
+            exit 0
+        end
     end
 
-    option.on('-h', '--help', 'Print usage info') do
-      puts option
-      exit 0
+    option.parse!
+
+    if ARGV.length != 2 then
+        puts option
+        exit
     end
 
-    option.on('-v', '--version', 'Print version info') do
-      puts "moss #{Moss::VERSION}"
-      exit 0
-    end
-  end
 
-  option.parse!
+    output = `git diff #{ if color then "--color-words" else "" end } --no-index #{ARGV.join ' '}`
 
-  if ARGV.length != 2 then
-    puts option
-    exit
-  end
-
-
-  output = `git diff #{ if color then "--color-words" else "" end } --no-index #{ARGV.join ' '}`
-
-  puts output
+    puts output
 end
 
 begin
-  main
+    main
 rescue Interrupt
-  nil
+    nil
 end
