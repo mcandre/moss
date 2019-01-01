@@ -26,7 +26,7 @@ Gem::Specification.new { |s|
     s.add_development_dependency 'churn', '~> 1.0'
     s.add_development_dependency 'cane', '~> 2.6'
     s.add_development_dependency 'excellent', '~> 2.1'
-    s.add_development_dependency 'rubocop', '~> 0.25'
+    s.add_development_dependency 'rubocop', '~> 0.49'
     s.add_development_dependency 'tailor', '~> 1.4'
     s.add_development_dependency 'rspec', '~> 3.0'
     s.add_development_dependency 'cucumber', '~> 1.3'
