@@ -16,9 +16,9 @@ Gem::Specification.new { |s|
     s.files = Dir['lib/*.rb'] + ['LICENSE.md']
     s.homepage = 'https://github.com/mcandre/moss'
 
-    s.required_ruby_version = '>= 2.0'
+    s.required_ruby_version = '>= 2.7'
 
-    s.add_development_dependency 'rake', '~> 10.3'
+    s.add_development_dependency 'rake', '~> 13.0.1'
     s.add_development_dependency 'reek', '~> 1.3'
     s.add_development_dependency 'flay', '~> 2.5'
     s.add_development_dependency 'flog', '~> 4.3'

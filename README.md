@@ -38,7 +38,7 @@ https://github.com/mcandre/moss
 
 # REQUIREMENTS
 
-* [Ruby](https://www.ruby-lang.org/) 2.0+
+* [Ruby](https://www.ruby-lang.org/) 2.7+
 * `git` and `bash`. Often bundled with Mac OS X, Unix, and Linux. Available as [Git Bash](http://chocolatey.org/packages/git) in Windows.
 
 ## Optional
