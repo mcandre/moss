@@ -8,6 +8,8 @@
 #
 # cp ../../hooks/post-merge-checkout .git/hooks/post-merge
 # cp ../../hooks/post-merge-checkout .git/hooks/post-checkout
+set -eEuo pipefail
+IFS=$'\n\t '
 
 #
 # git_modified $1
