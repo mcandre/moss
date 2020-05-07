@@ -90,7 +90,3 @@ Keep the code looking good with the linter tools:
 ```
 $ rake lint
 ```
-
-## Git Hooks
-
-See `hooks/`.
